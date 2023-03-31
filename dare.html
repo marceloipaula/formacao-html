@@ -4,9 +4,155 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página - Módulo I - Primeiros Passos com HTML</title>
 </head>
+<!-- 
+Utilizar todas as tags explicadas nas aulas: 
+    <h1> até <h6>, <p>, <mark>, <small>, <i>, <u>, <strong>, 
+    <ol>, <ul>, <li>, <a>, <hr>, <sub>, <sup>, <blockquote>;
+
+Utilizar novas tags sugeridas: 
+    <font>, <del>, <p>, <abbr> 
+    (a ideia é buscar estas tags na internet, 
+    entender como ela funciona e utilizar no texto).
+-->
 <body>
-    <h1>Desafio HTML</h1>
+    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+    <hr />
+
+    <h2 id="indice">Índice</h2>
+    <ul>
+        <li><a href="#historia">História dos computadores</a></li>
+        <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#como">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#entendendo">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#links">Links de referências</a></li>
+    </ul>
+    <hr>
+
+    <h2 id="historia">História dos computadores</h2>
+    <small><a href="#indice">voltar ao índice</a></small>
+    <p>O <mark>primeiro computador</mark> foi criado entre <mark>1943 e 1946</mark> 
+        e se chamava Eletronic  Numerical Integrator and Computer — <mark>ENIAC</mark>.
+        Para o seu desenvolvimento, foi investido cerca de 6 milhões de dólares e seu 
+        funcionamento dependia de uma série de fatores, como 200 mil watts de energia.
+    </p>
+ 
+    <img height="300" src="https://files.tecnoblog.net/wp-content/uploads/2011/02/785px-Eniac.jpg">
+    <p>Desenvolvido a pedido do exército dos Estados Unidos para seu laboratório 
+       de pesquisa balística, o ENIAC era um monstrengo de <strong><i>30 toneladas</i></strong>  de peso
+       que ocupava uma área de <strong><i>180 m²</i></strong> de área construída.
+    </p>
+   
+    <hr>
+    <h2 id="clients">O que são <i>Clients</i>?</h2>
+    <small><a href="#indice">voltar ao índice</a></small>
+    <p>Podemos dizer que <mark><i><u>Client</u></i></mark> é tudo aquilo que é executado
+        do lado do usuário, como solicitações, tarefas, assim como as ferramentas
+        instaladas em seu computador, como por exemplo o próprio navegador da internet. 
+    </p>
+
+    <hr>
+    <h2 id="servers">O que são <i>Servers</i>?</h2>
+    <small><a href="#indice">voltar ao índice</a></small>
+    <p><mark><i><u>Sever</u></i></mark>, por sua vez, refere-se a tudo que é executado do lado 
+        do servidor. Quando o <i>Client</i>, ou seja o usuário, faz uma consulta ou preenche
+        um formulário, essas informações são enviadas a um <i><u>Server,</u></i> ou servidor
+        que vai fazer o processamento através de suas ferramentas e recursos instalados e 
+        devolver uma resposta ao <i>Client</i>, o usuário que fez a solicitação.
+    </p>
+
+    <hr>
+    <h2 id="como">Como é uma estrutura básica de um HTML?</h2>
+    <small><a href="#indice">voltar ao índice</a></small>
+    <p>O <abbr title="HyperText Markup Language">HTML</abbr> é uma linguagem de marcação de texto criada para formatar
+       o texto exibido no navegador de forma amigável e personalizada. 
+       Com a chegada do <strong>HTML5</strong> a linguagem assume
+       o papel ainda mais forte na estruturação e fácil identificação da função e objetivo de cada bloco 
+       de conteúdo dentro do documento.
+    </p>
+    <p>A estrutura básica de um documento HTML é: </p>
+    <blockquote>
+        <pre>
+        <font color="darkblue">
+        &lt;html&gt;
+            &lt;head>
+                &lt;title>Estrutura do HTML&lt;/title>
+            &lt;/head>
+            &lt;body>
+                &lt;p>Eu sou um HTML!&lt;/p>
+            &lt;/body>
+        &lt;/html>
+        </font>
+        </pre>
+    </blockquote>
+
+    H<sub>2</sub>O b<sup>2</sup> <del>texto deletado</del>
+
+    <hr>
+    <h2 id="entendendo">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+    <small><a href="#indice">voltar ao índice</a></small>
+    <p> Uma boa forma de listar ou enumerar uma sequência de tópicos é por meio
+    listas. As listas são formadas por <i>itens</i> que possuem marcadores que destacam
+    cada item da lista, podendo ser não numerados no caso das 
+    <mark>listas não ordenadas</mark>, ou marcadores que seguem uma sequência 
+    numérica no caso das <mark>listas ordenadas</mark>.
+    
+    <h3>Exemplo de lista não ordenada</h3>
+    <p>
+    <blockquote>
+        <h4>Código html:</h4>
+        <pre>
+        <font color="red">
+        &lt;ul>
+            &lt;li> Primeiro item &lt;/li>
+            &lt;li> Segundo  item &lt;/li>
+            &lt;li> Terceiro item &lt;/li>
+        &lt;/ul>
+        </font>
+        </pre>
+        <h4>Exibição na tela:</h4>
+        <ul>
+            <li>Primeiro item </li>
+            <li>Segundo  item </li>
+            <li>Terceiro item </li>
+        </ul>
+    </blockquote>   
+    </p><br>
+
+    <h3>Exemplo de lista ordenada</h3>
+    <p>
+    <blockquote>
+        <h4>Código html:</h4>
+        <pre>
+        <font color="red">
+        &lt;ol>
+            &lt;li> Primeiro item &lt;/li>
+            &lt;li> Segundo  item &lt;/li>
+            &lt;li> Terceiro item &lt;/li>
+        &lt;/ol>
+        </font>
+        </pre>
+        <h4>Exibição na tela:</h4>
+        <ol>
+            <li>Primeiro item </li>
+            <li>Segundo  item </li>
+            <li>Terceiro item </li>
+        </ol>
+        </blockquote>   
+        </p>
+    <hr>
+    
+    <h2 id="links">Links de referências</h2>
+    <small><a href="#indice">voltar ao índice</a></small>
+    <ul>
+        <li><a href="https://dio.me" target="_blank">http://dio.me</a></li>
+        <li><a href="https://www.w3.org/" target="blank">http://www.w3c.org</a></li>
+        <li><a href="https://tecnoblog.net/especiais/eniac-primeiro-computador-do-mundo-completa-65-anos/" target="_blank">http://tecnoblog.net</a></li>
+        <li><a href="https://blog.contmatic.com.br/evolucao-dos-computadores/#:~:text=O%20primeiro%20computador%20foi%20criado,200%20mil%20watts%20de%20energia" target="_blank">https://blog.contmatic.com.br</a></li>
+            
+    </ul>
+
 </body>
 </html>
